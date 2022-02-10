@@ -1,8 +1,10 @@
 @extends('templates.main')
 @section('content')
-<div class="container-fluid">    
+<div class="container-fluid">
+         
       <div class="row mt-4">          
                   <div class="col-md-9 ms-sm-auto col-lg-10 px-md-4" >
+                        <div class="mb-4 border-bottom"><h2>Edit Surat Masuk</h2></div>
                         <form action="/update/{{ $edt->id }}" method="post" enctype="multipart/form-data">
                               @csrf
 

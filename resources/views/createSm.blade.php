@@ -3,6 +3,7 @@
 <div class="container">    
       <div class="row ">          
                   <div class="col-md-10 offset-md-2 py-2" >
+                        <div class="mb-4 border-bottom"><h2>Tambah Surat Masuk</h2></div>
                         <form action="/store" method="post" enctype="multipart/form-data">
                               @csrf
 
