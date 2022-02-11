@@ -4,25 +4,25 @@
           <div class="position-sticky pt-2">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+                <a class="nav-link {{ request()->is('/') ? 'active' : '' }} " aria-current="page" href="/">
                   <span data-feather="home"></span>
                   Dashboard
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/suratMasuk">
+                <a class="nav-link {{ request()->is('/suratMasuk') ? 'active' : '' }}" href="/suratMasuk">
                   <span data-feather="file"></span>
                   Surat Masuk
                 </a>           
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ request()->is('#') ? 'active' : '' }}" href="#">
                   <span data-feather="file-text"></span>
                   Surat Keluar
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
+                <a class="nav-link {{ request()->is('#') ? 'active' : '' }}" href="#">
                   <span data-feather="users"></span>
                   Manajemen Akun
                 </a>

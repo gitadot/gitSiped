@@ -10,6 +10,12 @@
 
     <!-- Bootstrap core CSS -->
 <link href="/css/dashboard.css" rel="stylesheet">
+
+<style>
+  .active {
+    color : goldenrod;
+  }
+</style>
     
   </head>
   <body>
