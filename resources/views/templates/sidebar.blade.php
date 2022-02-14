@@ -4,19 +4,19 @@
           <div class="position-sticky pt-2">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link {{ request()->is('/') ? 'active' : '' }} " aria-current="page" href="/">
-                  <span data-feather="home"></span>
+                <a class="nav-link {{ request()->is('/') ? 'active' : '' }} "  href="/">
+                  <span data-feather="layers"></span>
                   Dashboard
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ request()->is('/suratMasuk') ? 'active' : '' }}" href="/suratMasuk">
+                <a class="nav-link {{ request()->is('suratMasuk') ? 'active' : '' }}" href="/suratMasuk">
                   <span data-feather="file"></span>
                   Surat Masuk
                 </a>           
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ request()->is('#') ? 'active' : '' }}" href="#">
+                <a class="nav-link {{ request()->is('suratKeluar') ? 'active' : '' }}" href="#">
                   <span data-feather="file-text"></span>
                   Surat Keluar
                 </a>
@@ -27,6 +27,7 @@
                   Manajemen Akun
                 </a>
               </li>   
+              
             </ul>      
           </div>
         </nav>
